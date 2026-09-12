@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>Invitation Privée — Rima & Hocine</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     PAGE D'OUVERTURE
+===================================================== -->
+
+<section
+  id="cover"
+  aria-label="Ouvrir l'invitation"
+>
+
+  <div
+    class="cover-card"
+    id="openEnvelope"
+  >
+
+    <img
+      src="images/photo_2026-09-07_21-57-39.jpg"
+      alt="Enveloppe d'invitation"
+    >
+
+
+    <div class="cover-text">
+
+
+      <div class="cover-title">
+
+        Jour de Mariage
+
+      </div>
+
+
+      <div class="cover-subtitle">
+
+        INVITATION PRIVÉE
+
+      </div>
+
+
+      <div class="cover-hint">
+
+        Cliquez sur l'enveloppe pour l'ouvrir ♡
+
+      </div>
+
+
+      <div class="cover-arabic">
+
+        اضغط على الظرف لفتحه
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     INVITATION
+===================================================== -->
+
+<main id="invitation">
+
+
+<!-- =====================================================
+     1. PHOTO RIMA & HOCINE
+===================================================== -->
+
+<section class="section-image">
+
+  <img
+    src="images/photo_2_2026-09-07_16-22-38.jpg"
+    alt="Rima et Hocine"
+  >
+
+</section>
+
+
+
+<!-- =====================================================
+     2. LECTEUR MUSIQUE
+===================================================== -->
+
+<section class="section-image">
+
+  <div class="music-image-wrapper">
+
+
+    <!-- IMAGE SANS ICONES -->
+
+    <img
+      src="images/photo_2026-09-12_03-47-05.jpg"
+      alt="Lecteur musique"
+    >
+
+
+    <!-- MENU -->
+
+    <button
+      type="button"
+      class="music-control music-menu-btn"
+      aria-label="Menu"
+      title="Menu"
+    >
+
+      <svg
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+
+        <path
+          d="M4 6h16M4 12h16M4 18h16"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.4"
+          stroke-linecap="round"
+        />
+
+      </svg>
+
+    </button>
+
+
+
+    <!-- MUTE -->
+
+    <button
+      type="button"
+      id="muteButton"
+      class="music-control music-mute-btn"
+      aria-label="Couper le son"
+      title="Mute"
+    >
+
+      <svg
+        id="muteIcon"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+
+        <path
+          d="M4 9v6h4l5 4V5L8 9H4z"
+          fill="currentColor"
+        />
+
+        <path
+          d="M16 9c1.8 1.7 1.8 4.3 0 6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+
+      </svg>
+
+    </button>
+
+
+
+    <!-- SETTINGS -->
+
+    <button
+      type="button"
+      class="music-control music-settings-btn"
+      aria-label="Réglages"
+      title="Réglages"
+    >
+
+      <svg
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+
+        <path
+          d="M9.8 3.5h4.4l.7 2.1c.5.2 1 .5 1.5.9l2.1-.5
+          2.2 3.8-1.5 1.5c.1.5.1 1.1 0 1.6l1.5 1.5-2.2 3.8
+          -2.1-.5c-.5.4-1 .7-1.5.9l-.7 2.1H9.8l-.7-2.1
+          c-.5-.2-1-.5-1.5-.9l-2.1.5-2.2-3.8 1.5-1.5
+          c-.1-.5-.1-1.1 0-1.6L3.3 9.8l2.2-3.8 2.1.5
+          c.5-.4 1-.7 1.5-.9l.7-2.1z"
+          fill="currentColor"
+        />
+
+        <circle
+          cx="12"
+          cy="12"
+          r="3.2"
+          fill="#4a0508"
+        />
+
+      </svg>
+
+    </button>
+
+
+
+    <!-- BARRE DE PROGRESSION -->
+
+    <input
+      id="musicProgress"
+      class="music-progress"
+      type="range"
+      min="0"
+      max="100"
+      value="0"
+      aria-label="Progression de la musique"
+    >
+
+
+
+    <!-- REPEAT -->
+
+    <button
+      type="button"
+      id="repeatButton"
+      class="music-control music-repeat-btn"
+      aria-label="Répétition désactivée"
+      title="Répéter"
+    >
+
+      <svg
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+
+        <path
+          d="M7 7h9l-2.2-2.2M17 17H8l2.2 2.2M16 7l2.5 2.5L16 12
+          M8 17l-2.5-2.5L8 12"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+
+      </svg>
+
+    </button>
+
+
+
+    <!-- PREVIOUS -->
+
+    <button
+      type="button"
+      id="prevButton"
+      class="music-control music-prev-btn"
+      aria-label="Piste précédente"
+      title="Précédent"
+    >
+
+      <svg
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+
+        <path
+          d="M6 5v14"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.2"
+          stroke-linecap="round"
+        />
+
+        <path
+          d="M19 5 9 12l10 7V5z"
+          fill="currentColor"
+        />
+
+      </svg>
+
+    </button>
+
+
+
+    <!-- PLAY / PAUSE -->
+
+    <button
+      type="button"
+      id="musicButton"
+      class="music-control music-play-btn"
+      aria-label="Jouer la musique"
+      title="Play"
+    >
+
+      <svg
+        id="playIcon"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+
+        <circle
+          cx="12"
+          cy="12"
+          r="11"
+          fill="var(--cream)"
+        />
+
+        <path
+          d="M10 7.5v9l7-4.5-7-4.5z"
+          fill="#4a0508"
+        />
+
+      </svg>
+
+    </button>
+
+
+
+    <!-- NEXT -->
+
+    <button
+      type="button"
+      id="nextButton"
+      class="music-control music-next-btn"
+      aria-label="Piste suivante"
+      title="Suivant"
+    >
+
+      <svg
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+
+        <path
+          d="M18 5v14"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.2"
+          stroke-linecap="round"
+        />
+
+        <path
+          d="m5 5 10 7-10 7V5z"
+          fill="currentColor"
+        />
+
+      </svg>
+
+    </button>
+
+
+
+    <!-- SHUFFLE -->
+
+    <button
+      type="button"
+      id="shuffleButton"
+      class="music-control music-shuffle-btn"
+      aria-label="Lecture aléatoire désactivée"
+      title="Aléatoire"
+    >
+
+      <svg
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+
+        <path
+          d="M16 5h3v3M19 5l-5 5M8 8l-3-3M5 19l5-5M14 14l5 5
+          M16 19h3v-3"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+
+      </svg>
+
+    </button>
+
+
+    <!-- AUDIO -->
+
+    <audio
+      id="weddingMusic"
+      preload="auto"
+    ></audio>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     3. VERSION ARABE
+===================================================== -->
+
+<section class="section-image">
+
+  <img
+    src="images/photo_4_2026-09-07_16-22-38.jpg"
+    alt="Invitation arabe"
+  >
+
+</section>
+
+
+
+<!-- =====================================================
+     4. VERSION FRANÇAISE
+===================================================== -->
+
+<section class="section-image">
+
+  <img
+    src="images/photo_5_2026-09-07_16-22-38.jpg"
+    alt="Invitation française"
+  >
+
+</section>
+
+
+
+<!-- =====================================================
+     5. CÉRÉMONIE + LOCALISATION
+===================================================== -->
+
+<section class="location-image-wrapper">
+
+  <!-- Image nettoyée : les informations sont maintenant créées en HTML -->
+  <img
+    src="images/photo_2026-09-12_15-28-03.jpg"
+    alt="Cérémonie et localisation"
+  >
+
+  <!-- =================================================
+       INFORMATIONS CRÉÉES EN HTML
+       ================================================= -->
+
+  <div class="ceremony-info" aria-label="Informations de la cérémonie">
+
+    <div class="ceremony-date">
+      30 octobre 2026
+    </div>
+
+    <div class="ceremony-time">
+      à partir de 11h
+    </div>
+
+    <a
+      class="ceremony-place"
+      href="https://www.google.com/maps/search/?api=1&query=Salle+des+f%C3%AAtes+BELKACEMI+Boudouaou+El+Bahri"
+      target="_blank"
+      rel="noopener"
+>     <span>Salle des fêtes BELKACEMI,</span>
+      <span>Boudouaou El Bahri</span>
+    </a>
+
+  </div>
+
+  <!-- Bouton invisible : ouvre Google Maps -->
+  <a
+    id="locationButton"
+    class="location-overlay"
+    href="#"
+    target="_blank"
+    rel="noopener"
+    aria-label="Voir la localisation dans Google Maps"
+  ></a>
+
+</section>
+
+
+
+<!-- =====================================================
+     6. SAVE THE DATE + COMPTE À REBOURS
+===================================================== -->
+
+<div class="invitation">
+
+
+  <img
+    src="images/ChatGPT Image 8 sept. 2026, 02_14_07.png"
+    alt="Save The Date Invitation"
+  >
+
+
+  <div class="countdown-container">
+
+
+    <div class="countdown-title">
+
+      Notre plus beau jour arrive dans...
+
+    </div>
+
+
+    <div class="countdown">
+
+
+      <div class="time-box">
+
+        <span
+          class="number"
+          id="days"
+        >
+          00
+        </span>
+
+        <span class="label">
+          Jours
+        </span>
+
+      </div>
+
+
+
+      <div class="time-box">
+
+        <span
+          class="number"
+          id="hours"
+        >
+          00
+        </span>
+
+        <span class="label">
+          Heures
+        </span>
+
+      </div>
+
+
+
+      <div class="time-box">
+
+        <span
+          class="number"
+          id="minutes"
+        >
+          00
+        </span>
+
+        <span class="label">
+          Minutes
+        </span>
+
+      </div>
+
+
+
+      <div class="time-box">
+
+        <span
+          class="number"
+          id="seconds"
+        >
+          00
+        </span>
+
+        <span class="label">
+          Secondes
+        </span>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     7. NOTE
+===================================================== -->
+
+<section class="section-image">
+
+  <img
+    src="images/photo_2026-09-12_02-00-33.jpg"
+    alt="Note"
+  >
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+  created by houssamkeddam@gmail.com
+
+</footer>
+
+
+</main>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
